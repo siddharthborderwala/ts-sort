@@ -1,12 +1,16 @@
+import { Sorter } from './Sorter';
+
 /**
  * @class Represents a collection os numbers
  */
-export class NumbersCollection {
+export class NumbersCollection extends Sorter {
   /**
    * Constructor for NumbersCollection class
    * @param {Array<number>} data - Array of numbers
    */
-  constructor(public data: number[]) {}
+  constructor(public data: number[]) {
+    super();
+  }
 
   /**
    * Getter for the number of elements present in the collection
